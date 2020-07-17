@@ -7,6 +7,7 @@ class Network {
         this.server = server;
     }
 
+
     connect(cb) {
         if (this.ws) return;
         this.ws = new WebSocket(this.server);
